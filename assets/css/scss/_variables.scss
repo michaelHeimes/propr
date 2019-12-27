@@ -1,0 +1,40 @@
+$c-primary: #000;
+$c-accent: #C31A8F;
+
+$c-green: #41AD49;
+$c-blue: #0071BC;
+$c-yellow: #FFF500;
+
+$background-color: #FFF;
+
+$text-color: $c-primary;
+$link-color: $c-accent;
+
+$link-hover-color: darken($link-color, 15%) !default;
+
+$font-family-sans-serif:  'acumin-pro-semi-condensed',sans-serif;
+
+$font-family-base:  $font-family-sans-serif;
+
+$font-size-base: 1rem;
+
+$font-size_step-up-5: ceil(($font-size-base * 2.083333)) !default; // 50px
+$font-size_step-up-4: ceil(($font-size-base * 1.75)) !default; // 42px
+$font-size_step-up-3: ceil(($font-size-base * 1.66667)) !default; // 40px
+$font-size_step-up-2: ceil(($font-size-base * 1.5)) !default; // 36px
+$font-size_step-up-1: ceil(($font-size-base * 1.3333)) !default; // 32px
+
+$font-size-h2: $font-size_step-up-5;
+$font-size-h3: $font-size_step-up-2;
+
+$letter-spacing-base: .026rem;
+$letter-spacing-heading:  0.0012em;
+
+$line-height-base: 1.35;
+$line-height-computed: floor(($font-size-base * $line-height-base * 2.66)) !default; // ~20px
+$line-height-heading: 1.5;
+
+$font-weight-base: 300;
+$font-weight-heading: 600;
+
+$spacing-1: ceil(($font-size-base * 2.083333)) !default;

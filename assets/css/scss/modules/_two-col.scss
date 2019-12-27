@@ -1,0 +1,15 @@
+.module-two-column img { max-width: 100%; height: auto; }
+.module-two-column h2 { font-size: 2.08333em; font-weight: 600; }
+.module-two-column h3 { font-size: 1.5em; font-weight: 600; margin-bottom: 10px;  }
+.module-two-column .section-title { margin-top: 100px; font-weight: 700; font-size: 2.08333em; }
+.module-two-column .center-vertical { margin: 0; display: flex; justify-content: center; flex-direction: column; min-height: 300px; }
+
+.module-two-column.two-col-leadership{ padding: 6em 0 6em; }
+.module-two-column.two-col-leadership p{ margin: 0; }
+.module-two-column.two-col-leadership h2{ margin: 1.333em 0 2.333rem 0; }
+
+.module-two-column.two-col-leadership .container{
+    width: 100%;
+    max-width: none;
+    padding: 0;
+}

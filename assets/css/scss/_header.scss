@@ -1,0 +1,195 @@
+
+header {
+    background: #fff;
+    height: 138px;
+}
+header.inverse {
+    background: #000;
+    color: #fff;
+}
+header.inverse .navbar-brand, header.alternative .navbar-brand {
+    background-image: url(../img/logo_w@2x.png);
+}
+header.error .navbar-brand {
+    background-image: url(../img/logo-404@2x.png) !important;
+}
+header.alternative{
+    background: $c-accent;
+    color: #fff;
+}
+.navbar-brand {
+    background-image: url(../img/logo@2x.png);
+    text-indent: -999em;
+    overflow: hidden;
+    width: 140px;
+    height: 65px;
+    background-size: cover;
+}
+.navbar-header {
+    padding: 36px 0 12px 30px;
+}
+.navbar {
+    display: block;
+    padding: 0;
+}
+.navbar.container{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.site-header .container{
+    max-width: 1800px;
+    margin-left: auto;
+    padding-left: 157px;
+}
+
+@media (min-width: 768px) { 
+    .navbar{    
+        display: block;
+    }
+}
+
+@media (min-width:801px) {
+    .navbar-nav{
+        li a{
+            font-size: 1em;
+            font-weight: 700;
+            padding: 2.18em .85em !important;
+        }
+        li:last-child a{
+            padding-right: 0 !important;
+        }
+    }
+    .nav-link{
+        padding: 1.9em 1em !important;
+    }
+}
+
+@media (min-width:801px) {
+    .navbar-toggle {
+        display: none;
+    }
+    .navbar-collapse {
+        display: block !important;
+        position: absolute;
+        right: 80px;
+        top: 0;
+    }
+    .navbar-nav {
+        display: block;
+        text-align: right;
+    }
+    .navbar-nav li {
+        display: inline-block;
+    }
+    .navbar-nav li a {
+        display: block;
+        color: #000;
+    }
+    .navbar-nav .current-menu-item a,
+    .navbar-nav li a:hover {
+        color: #C31A8F !important;
+    }
+    header.inverse .navbar-nav li a, header.alternative .navbar-nav li a {
+        color: #fff;
+    }
+    header.alternative .navbar-nav li a:hover {
+        color: $c-primary !important;
+    }
+    .navbar-header {
+        // padding: 36px 0 12px 157px;
+    }
+}
+@media (min-width: 991px) { 
+    .navbar-header {
+        padding: 36px 0 12px 150px;
+    }
+}
+@media (max-width:800px) {
+    .navbar-nav {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .navbar .navbar-toggle {
+      float: right;
+      margin-top: 17px;
+      margin: 17px 30px 0 0;
+      font-weight: 500;
+      text-transform: lowercase;
+      padding: 0px 15px 5px;
+      border: 3px solid;
+      box-shadow: 2px 2px 0px #000;
+      background: transparent;
+      border-radius: 0;
+    }
+    header.inverse .navbar .navbar-toggle, header.alternative .navbar .navbar-toggle {
+        color: #fff;
+        border-color: #fff;
+        box-shadow: 2px 2px 0px #FFF;
+    }
+    .navbar .navbar-collapse {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #fff;
+      z-index: 9999;
+      height: 100% !important;
+    }
+    .navbar .navbar-collapse.fade-nav.collapsing {
+      opacity: 0;
+      -webkit-transition: all ease 0.3s;
+      -moz-transition: all ease 0.3s;
+      -o-transition: all ease 0.3s;
+      transition: all ease 0.3s;
+    }
+    .navbar .navbar-collapse.fade-nav.in {
+      opacity: 1;
+    }
+    .navbar .navbar-collapse .nav {
+      text-align: center;
+    }
+    .navbar .navbar-collapse .nav li a {
+      font-size: 2em;
+      text-transform: uppercase;
+      line-height: 1.7em;
+      font-weight: 700;
+      text-decoration: none;
+      color: #000;
+    }
+    .navbar .navbar-collapse .nav li a:hover {
+      color: #000;
+    }
+    .navbar .close-handle {
+      position: fixed;
+      top: 10%;
+      right: 10%;
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+    }
+    .navbar .close-handle:before, .navbar .close-handle:after {
+      content: '';
+      display: block;
+      border-bottom: 2px solid $c-accent;
+      width: 30px;
+      height: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -15px;
+    }
+    .navbar .close-handle:before {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+    .navbar .close-handle:after {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    .subfooter-wrapper { padding-left: 30px; padding-right: 30px; }
+}

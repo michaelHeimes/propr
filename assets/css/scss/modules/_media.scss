@@ -1,0 +1,7 @@
+.module-media .grid-item { margin: 0 0 37px; display: flex; }
+.module-media .grid-item.media-full { margin: 0 0 80px; display: flex; }
+.module-media .grid-item-text{ display: flex; flex-flow: column; flex: 1; justify-content: center; margin: 1em 0; }
+.module-media .grid-item-text p{ font-size: 1em; letter-spacing: .005rem; line-height: 1.4em; font-style: italic; }
+.module-media .grid-item-text a em,
+.module-media .grid-item-text em a { font-style: normal; font-size: .8em; color: red; }
+.module-media .grid-item-text p.media-quote-name{ text-align: right; font-size: 1.3333em !important; margin-top: 28px; font-style: normal !important; }

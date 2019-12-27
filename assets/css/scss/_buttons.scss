@@ -1,0 +1,33 @@
+.btn {
+    border: 0px;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 0;
+    font-size: 1em;
+    padding: 10px 30px;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.btn-rounded{
+    border-radius: 5px;
+}
+
+.btn-lg{
+    font-size: $font-size_step-up-1;
+    font-weight: 600;
+    padding: .35em .45em .45em;
+}
+
+.btn.btn-shadow{
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.4);
+}

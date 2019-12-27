@@ -1,0 +1,135 @@
+
+.post-card{
+    margin-bottom: 80px;
+    min-height: 284px;
+    h2{
+        font-size: $font-size_step-up-1;
+    }
+    a{
+        color: #000;
+    }
+}
+
+.post-card-wrapper{
+    border: 2px solid #000;
+    justify-content: space-between;
+    padding: 1em 0 1em 1em;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 284px;
+    position: relative;
+    padding-right: 26%;
+    h3{
+        font-size: 1em;
+        font-weight: 400;
+    }
+    .author{
+        font-size: 20px;
+    }
+}
+
+.post-card-content{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    flex-grow: 1;
+}
+
+.section-post-cards{
+    padding: 2em 0;
+}
+
+.section-recent-post{
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    h3{
+        border-bottom: 2px solid #fff;
+        line-height: 1em;
+        padding-bottom: .75em;
+        margin-bottom: 1em;
+        width: auto;
+        float: left;
+    }
+    a.read-more{
+        display: block;
+        margin-top: 2em;
+        font-weight: 600;
+        font-size: 1.333em;
+    }
+    &.blog-listing{
+        margin-top: 0;
+    }
+}
+
+
+.recent-post-content{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    padding: 4em 50px 4em 30px;
+    @media (min-width: 1200px) {
+        padding-right: 0;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    h2{
+        line-height: 1.15;
+        margin-bottom: 1rem;
+    }
+    h3{
+        width: auto;
+        float: left;
+        flex-grow: 0;
+    }
+}
+
+.newsletter-block.post-card{
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    form{
+        margin-top: 0;
+    }
+}
+
+.post-card-thumb{
+    width: 160px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    img{
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) { 
+    .recent-post-content{
+        padding: 3em 40px 3em 150px;
+        min-width: 730px;
+        h2{
+            line-height: 1.25;
+        }
+    }
+}
+
+@media (min-width: 1200px) { 
+    .post-card-thumb{
+        display: flex;
+        background: #000;
+        align-items: center;
+        height: 100%;
+    }
+    .post-card-wrapper{
+        padding: 1em 7em 1em 1.333em;
+    }
+}

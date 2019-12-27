@@ -1,0 +1,33 @@
+.post-inline-cta{
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 2.333em 0;
+    h4{
+        font-size: $font-size_step-up-2;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 2.333rem;
+    }
+    .btn{
+        width: 100%;
+        align-self: center;
+        background-color: $c-blue;
+        &:hover{
+            background-color: $c-primary;
+        }
+    }
+    .inline-cta-actions{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) { 
+    .post-inline-cta{
+        padding: 1em 0;
+        h4{
+            text-align: left;
+            margin-bottom: 0px;
+        }
+    }
+}

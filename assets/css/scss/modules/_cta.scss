@@ -1,0 +1,59 @@
+.module-cta { 
+    padding: 0 0 40px; 
+}
+
+.module-cta .cta-wrapper { 
+    text-align: center; 
+}
+
+.section-cta{ 
+    margin: 2.5em 0 2.5em; 
+    text-align: center; 
+}
+
+.section-cta-link{ 
+    font-size: 1.5em; 
+    font-weight: 600; 
+    float: left; 
+}
+.section-cta-link span.label, .read-more span.label{ 
+    float: left; 
+}
+
+.section-cta-link span.arrow, .read-more span.arrow{ 
+    margin-left: .5em; 
+    margin-top: .15em;
+    float: left; 
+}
+
+.section-cta-link span.arrow:after, .read-more span.arrow:after{ 
+    content: ''; 
+    width: 37px; 
+    height: 31px; 
+    display: block; 
+    background: url('../img/arrow-right.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    float: left; 
+}
+
+.section-cta-link:hover{ 
+    text-decoration: none; 
+}
+
+.section-cta-link:hover span.label{ 
+    text-decoration: underline; 
+}
+
+@media (min-width: 768px) {
+    .section-cta{ 
+        text-align: left; 
+    }
+    .section-cta-link span.arrow:after, .read-more span.arrow:after{ 
+        width: 42px; 
+        height: 40px; 
+    }
+    .section-cta-link span.arrow, .read-more span.arrow{ 
+        margin-top: .2em;
+    }
+}

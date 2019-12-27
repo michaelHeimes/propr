@@ -1,0 +1,39 @@
+body {
+    font-family: $font-family-base;
+    font-weight: $font-weight-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    letter-spacing: $letter-spacing-base;
+}
+
+p{
+    font-size: 1.375rem;
+    font-weight: 500;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    letter-spacing: $letter-spacing-heading;
+    font-weight: $font-weight-heading;
+    line-height: $line-height-heading;
+}
+
+h2{ font-size: $font-size-h2; }
+
+h3{ font-size: $font-size-h3; }
+
+.large-copy p{ line-height: normal; }
+
+.centered-copy p{ text-align: center; }
+
+@media (min-width: 768px) { 
+    body{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1em;
+    }
+    .large-copy p{ 
+        font-size: $font-size_step-up-1; 
+        line-height: $line-height-computed; 
+    }
+ }
