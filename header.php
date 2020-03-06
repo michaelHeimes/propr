@@ -42,30 +42,83 @@
 
     <header class="<?php if( get_field('invert_navigation_colors') ){ echo 'inverse'; } ?><?php if( get_field('pink_navigation') ){ echo 'alternative'; } ?> site-header">
             <nav class="navbar" role="navigation">
+	            	            
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                        <span>Menu</span>
-                    </button>
-                    <a class="navbar-brand" href="<?php echo get_home_url(); ?>">propr</a>
+	                
+					<a class="navbar-brand" href="<?php echo get_home_url(); ?>">propr</a>	 
+					
+					<div class="cta-toggle-wrap">  
+						
+						<a class="header-cta" href="<?php echo get_home_url(); ?>/contact">Start A Project</a>
+             
+	                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+	                    
+	                        <span id="t-1"></span>
+	                        <span id="t-2"></span>
+	                        <span id="m-1"></span>
+	                        <span id="b-1"></span>
+	                        
+	                    </button>
+                    
+					</div>
+                    
                 </div>
 
                 <div class="fade-nav navbar-collapse collapse" id="navbar-collapse">
+	                
+	                <div class="container">
+	                
+<!--
                     <div class="container">
                         <span class="close-handle" data-toggle="collapse" data-target="#navbar-collapse"></span>
                     </div>
-                    <?php
-                        /* Main Menu */
-                        $args = array(
-                            'theme_location' => 'primary-navigation',
-                            'menu_id' => 'header_menu',
-                            'menu_class' => 'nav navbar-nav position-center',
-                            'container' => 'ul',
-                            'container_class' => false
-                        );
-                        wp_nav_menu( $args );
-                    ?>
+-->
+	                    <?php
+	                        /* Main Menu */
+	                        $args = array(
+	                            'theme_location' => 'primary-navigation',
+	                            'menu_id' => 'header_menu',
+	                            'menu_class' => 'nav navbar-nav position-center',
+	                            'container' => 'ul',
+	                            'container_class' => false
+	                        );
+	                        wp_nav_menu( $args );
+	                    ?>
+	                    
+	                    
+		    
+						<div class="row">
+	                    
+	                    <?php
+	                        /* Main Sub Menu */
+	                        $args = array(
+	                            'theme_location' => 'sub-primary-navigation',
+	                            'menu_id' => 'header_sub_menu',
+	                            'menu_class' => 'suv-nav navbar-nav col-sm-12 col-md-6',
+	                            'container' => 'ul',
+	                            'container_class' => false
+	                        );
+	                        wp_nav_menu( $args );
+	                    ?>	                    
+	
+							<div class="menu-address-wrap col-sm-12 col-md-6">
+								
+								<a href="<?php the_field('address_map_link','option');?>" target="_blank">
+									<p><?php the_field('address','option');?></p>
+								</a>
+							
+							</div>
+							
+							<div class="menu-tagline-wrap col-sm-12">
+								<p class="nav-tagline"><?php the_field('navigation_menu_tagline','option');?></p>
+							</div>
+	
+	        			</div>
+	        			
+	                </div>
+
                 </div>
             </nav>
     </header>
 
-    <div id="content">
+    <div id="content" class="<?php if( get_field('remove_top_padding') ){ echo 'no-top-padding'; } ?>">

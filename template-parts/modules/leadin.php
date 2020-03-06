@@ -2,7 +2,7 @@
     $right = get_sub_field('content_right');
     $left = get_sub_field('content_left'); 
 ?>
-<div class="module-leadin" <?php if( $color = get_sub_field('background_color') ): ?>style="background-color:<?php echo $color; ?>"<?php endif; ?>>
+<div class="module-leadin <?php if( $need_top_padding = get_sub_field('need_top_padding') ):?>needs-top-padding<?php endif; ?>" <?php if( $color = get_sub_field('background_color') ): ?>style="background-color:<?php echo $color; ?>"<?php endif; ?>>
     <div class="container">
         <div class="row">
             <div class="col-md-12">

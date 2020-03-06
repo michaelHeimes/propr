@@ -6,6 +6,26 @@ $module_id = uniqid();
         
             get_template_part( 'template-parts/modules/hero', 'none' );
 
+        elseif( get_row_layout() == 'home_about' ): 
+
+            get_template_part( 'template-parts/modules/home_about', 'none' );
+        
+        elseif( get_row_layout() == 'select_work' ): 
+
+            get_template_part( 'template-parts/modules/select_work', 'none' );
+
+        elseif( get_row_layout() == 'our_services' ): 
+
+            get_template_part( 'template-parts/modules/our_services', 'none' );
+
+        elseif( get_row_layout() == 'how_to_hire' ): 
+
+            get_template_part( 'template-parts/modules/how_to_hire', 'none' );
+
+        elseif( get_row_layout() == 'propr_mattr' ): 
+
+            get_template_part( 'template-parts/modules/propr_mattr', 'none' );
+
         elseif( get_row_layout() == 'testimonials' ): 
 
             get_template_part( 'template-parts/modules/testimonials', 'none' );

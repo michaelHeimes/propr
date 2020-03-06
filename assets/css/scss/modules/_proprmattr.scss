@@ -1,0 +1,67 @@
+.module-propr-mattr { 
+	margin-bottom: 80px;
+
+	> .container .row {
+		background: #FAFAFA;
+		padding: 2.1em 0.65em;
+		
+	@media (min-width: 768px) {
+		padding: 5.1em 1.65em;
+	}
+		
+	}
+
+	.left {
+		margin-bottom: 24x;
+		
+	@media (min-width: 768px) {
+		margin-bottom: 0;
+	}
+		
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+						
+	}
+	
+	.right {
+		margin-top: -0.3em;
+
+		.section-title {
+			margin-bottom: 0.54em;
+			
+			h2 {
+				font-size: rem-calc(28px);
+				line-height: 1.428;
+				font-weight: 500;
+			}
+		
+		}
+		
+		h3 {
+			font-size: rem-calc(36px);
+			line-height: 1.4;
+			font-weight: 400;
+			max-width: 520px;
+			
+		@media (min-width: 768px) {
+			font-size: rem-calc(50px);
+		}
+			
+		}
+		
+		a.arrow-link {
+			font-size: rem-calc(20px);
+			
+			img {
+				max-width: 53px;
+			}
+			
+		}
+				
+	}
+
+
+}
+

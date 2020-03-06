@@ -38,6 +38,7 @@ function theme_setup() {
 	// Register commonly used menus
 	register_nav_menus(array(
 		'primary-navigation' => 'Primary Navigation',
+		'sub-primary-navigation' => 'Sub Primary Navigation',
 		'secondary-navigation' => 'Secondary Navigation'
 	));
 
@@ -199,4 +200,14 @@ function is_hex_dark( $hex ) {
 	}
 }
 
+// Enable ACF Options
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
+
 add_image_size( 'recent-thumb', 9999, 9999 );
+add_image_size( 'select-work', 840, 640 );
+add_image_size( 'propr-mattr', 1440, 800 );
+

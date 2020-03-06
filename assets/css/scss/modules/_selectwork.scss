@@ -1,0 +1,167 @@
+.module-select-work,
+.module-our-services {	
+	margin-top: 80px;
+
+	.row {
+		background: #292929;
+		padding-left: 1.7em;
+		padding-right: 1.7em;
+		
+	&.top {
+		padding-top: 4.4em;
+	}
+	
+	}
+	
+	.section-title {
+		border-color: #fff;
+		margin-bottom: 2rem;
+		
+		h2 {
+			font-size: rem-calc(40px);
+			line-height: 1.4;
+			color: #fff;
+			padding-bottom: 0.35em;
+			font-weight: 500 !important;
+		}
+	}
+	
+	.copy-wrap {		
+		p {
+			color: #fff;
+		}
+	}
+	
+	.projects-wrap {
+		padding-top: 3.1em;
+		padding-bottom: 3.1em;
+	
+		.single-project {
+			min-height: 100%;
+			margin-bottom: 50px;
+			
+		@media (min-width: 768px) {
+			margin-bottom: 0;
+		}
+		
+			.inner {
+				display: block;
+				background: #fff;
+				height: 100%;
+				color: #000;
+				transition: transform 0.3s ease;
+				
+			&:hover {
+				text-decoration: none;
+				
+				h3 {
+					color: $c-accent;
+				}
+				
+			}
+				
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+				
+				.bottom {
+					padding: 24px;
+					
+				@media (min-width: 992px) {
+					padding: 40px;
+				}
+					
+					h3,
+					p {
+						font-size: rem-calc(20px);
+						font-weight: 500;
+						transition: color 0.3s ease;
+					}
+					
+					h3 {
+						text-transform: uppercase;
+						position: relative;
+						padding-bottom: 1.3em;
+							
+						span {
+							position: relative;
+						
+							&:after {
+								content: '';
+								position: absolute;
+								height: 1px;
+								left: 0;
+								right: 0;
+								bottom: 0;
+								width: 100%;
+								background: #000;
+							}
+						
+						}
+						
+					}
+					
+				}
+				
+			}
+	
+		}
+		
+		a.arrow-link {
+			margin-top: 5.55em;
+			color: #fff;
+		}
+
+	}
+
+}
+
+.module-our-services {
+	.projects-wrap {
+		.single-project {
+			.inner {
+				background: transparent;
+				
+				.img-wrap {
+					min-height: 115px;
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+				}
+				
+				.bottom {
+					padding: 3px 17px 50px;
+					
+					h3,
+					ul {
+						color: #fff;
+					}
+					
+					h3 {
+						text-transform: none;
+						font-size: rem-calc(30px);
+						padding-bottom: 0.45em;
+						
+						span {
+							&:after {
+								display: none;
+							}
+						}
+					}
+					
+					ul {
+						font-size: rem-calc(24px);
+						list-style: none;
+						padding: 0;
+						margin: 0;
+						line-height: 1.75;
+						
+					}
+				}
+				
+			}
+		}
+	}
+}
+
