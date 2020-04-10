@@ -1,0 +1,39 @@
+.brand-audit-heading {
+	h1 {
+		font-size: rem-calc(50px);
+		line-height: 1;
+		
+		@media (min-width: 580px){
+			font-size: rem-calc(50px);
+		}
+		
+	}
+}
+
+.brand-audit-button a {
+	display: inline-block;
+	font-size: rem-calc(30px);
+    line-height: 1;
+    font-weight: bold;
+    background-color: #C31A8F;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+	border: 1px solid #C31A8F;
+    padding: 0.56em 1.021em 0.67em;
+    margin-top: 2.1em;
+    transition: all 0.3s ease;
+    
+    @media (min-width: 580px) {
+		font-size: rem-calc(50px);
+    }
+    
+    &:hover {
+	    color: #C31A8F;
+	    background-color: #fff;
+    }
+    
+}
+
+
+

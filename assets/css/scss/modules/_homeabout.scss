@@ -1,5 +1,10 @@
 .module-home_about { 
 	margin-bottom: 80px;
+	overflow: hidden;
+	
+	@media (min-width: 992px) {
+		overflow: visible;
+	}
 
 	.row {
 		margin-top: 5.2em;

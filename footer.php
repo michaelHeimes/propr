@@ -1,6 +1,6 @@
         </div> <?php //Close content div ?>
 
-
+		<?php if(get_field('hide_subfooter') != 'true'):?>
         <div class="subfooter">
             <div class="container">
                 <div class="row">
@@ -37,11 +37,14 @@
                 </div>
             </div>
         </div>
+        <?php endif;?>
+        
+        
         <footer>
             <div class="footer">
                 <div class="footer-bar">
                         <div class="footer-copyright">
-                            &copy;2019 Propr Design
+                            &copy;<?php $year = date("Y"); echo $year?> Propr Design
                         </div>
                         <?php
                             /* Main Menu */

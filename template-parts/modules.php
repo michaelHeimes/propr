@@ -5,6 +5,18 @@ $module_id = uniqid();
         if( get_row_layout() == 'hero' ): 
         
             get_template_part( 'template-parts/modules/hero', 'none' );
+            
+        elseif( get_row_layout() == 'text_editor'):
+
+            get_template_part( 'template-parts/modules/text-editor', 'none' );
+
+        elseif( get_row_layout() == 'full_width_image' ): 
+
+            get_template_part( 'template-parts/modules/full_width_image', 'none' );
+
+        elseif( get_row_layout() == 'two_col_images_at_16_9' ): 
+
+            get_template_part( 'template-parts/modules/two_col_images_at_16_9', 'none' );
 
         elseif( get_row_layout() == 'home_about' ): 
 
@@ -45,6 +57,10 @@ $module_id = uniqid();
         elseif( get_row_layout() == 'grid_clients' ): 
 
             get_template_part( 'template-parts/modules/grid', 'clients' );
+            
+        elseif( get_row_layout() == 'grid_images' ): 
+
+            get_template_part( 'template-parts/modules/grid', 'images' );
 
         elseif( get_row_layout() == 'lead_in' ):
 
@@ -77,6 +93,10 @@ $module_id = uniqid();
         elseif( get_row_layout() == 'contact_form'):
             
             get_template_part( 'template-parts/modules/form', 'contact' );
+
+        elseif( get_row_layout() == 'form_with_cta'):
+            
+            get_template_part( 'template-parts/modules/form_with_cta', 'none' );
             
         elseif( get_row_layout() == 'logo_grid'):
 

@@ -1,0 +1,157 @@
+.brand-audit {	
+	.spu-container  {
+		overflow: hidden;
+		
+		.spu-close {
+		    font-size: 26px;
+		    color: #868686;
+		    text-shadow: 0 0 0 #000;
+		    line-height: 1.36;
+		    margin-right: 10px;
+		}
+		
+		.top {
+			padding: 40px 20px !important;
+			font-size: rem-calc(26px);
+			font-weight: bold;
+			color: #000;
+			
+			@media (min-width: 460px) {
+				padding: 69px 69px 50px 69px !important;
+			}
+			
+			h1 {
+				color: #000;
+				font-size: rem-calc(30px);
+				font-weight: 800;
+				line-height: 1.1;
+				text-transform: uppercase;
+				margin-top: -18px;
+				
+				@media (min-width: 460px) {
+					font-size: rem-calc(40px);
+				}
+				
+				
+				@media (min-width: 850px) {
+					font-size: rem-calc(62px);
+				}
+				
+			}
+			
+			img {
+				max-width: 160px;
+				
+				@media (min-width: 700px) {
+					max-width: 180px;
+				}
+				
+				@media (min-width: 768px) {
+					max-width: 251px;
+				}				
+				
+			}
+			
+			p {
+				font-size: rem-calc(26px);
+				line-height: 1.36;
+				font-weight: 600;
+			}
+		
+		}
+		
+		.bottom {
+			padding: 20px;
+			height: 172px;
+			background-color: $c-accent;
+			display: flex;
+			align-items: center;
+			
+			@media (min-width: 460px) {
+				padding: 20px 69px 20px 69px;
+			}
+		
+			.gform_wrapper form {
+				height: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				
+				.validation_error {
+				    flex: 1 1 100%;
+				    min-width: 100%;
+				}
+				
+				.gform_body {
+					flex: 0 0 100%;
+					
+					@media (min-width: 640px) {
+						flex: 0 0 58.333333%;
+						padding-right: 40px;
+					}
+					
+					label.gfield_label {
+						clip: rect(1px, 1px, 1px, 1px);
+						clip-path: inset(50%);
+						height: 1px;
+						width: 1px;
+						margin: -1px;
+						overflow: hidden;
+						padding: 0;
+						position: absolute;
+					}
+					
+					.gform_fields {
+						margin: 0;
+						
+						.gfield {
+							margin: 0;
+						}
+						
+						input {
+							color: #fff;
+							border: 0;
+							border-bottom: 3px solid #fff;
+							box-shadow: 0 0 0 0;
+							background: transparent;
+							font-size: rem-calc(26px);
+							font-weight: bold;
+							
+							&::placeholder {
+								color: #fff;
+								font-size: rem-calc(26px);
+								font-weight: bold;
+							}
+							
+						}
+					
+					}
+					
+				}
+				
+				.gform_footer {
+					.gform_button.button {
+						color: #fff;
+						font-size: rem-calc(26px);
+						font-weight: bold;
+						height: 100%;
+						border-radius: 0;
+						background: transparent;
+						background: url(../img/form-arrow.svg);
+						background-repeat: no-repeat;
+					    background-position: 100% 50%;
+					    padding-right: 42px;
+					}
+				}
+				
+			}
+		
+		}
+	
+	}
+	
+}
+
+.gform_confirmation_message {
+	font-size: rem-calc(26px);
+	font-weight: bold;
+}

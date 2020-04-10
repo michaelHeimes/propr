@@ -31,3 +31,34 @@
 .btn.btn-shadow{
     box-shadow: 0px 1px 6px rgba(0,0,0,0.4);
 }
+
+.blog .alm-btn-wrap .alm-load-more-btn {
+	height: auto;
+	background: #fff;
+	border-radius: 0;
+	font-size: 1.375rem;
+    line-height: 1.4545;
+    font-weight: 300;
+    color: $c-accent;
+    border: 1px solid $c-accent;
+    text-transform: uppercase;
+    margin-right: 3.25em;
+    padding: 0.51em 1.021em 0.72em;
+    transition: all 0.3s ease;
+    
+    &:hover,
+    &.loading {
+	    background-color: #C31A8F;
+	    text-decoration: none;
+	    color: #fff;
+    }
+    
+    &.loading:before {
+	    display: none;
+    }
+    
+    &.done {
+	    display: none;
+    }
+    
+}

@@ -16,7 +16,18 @@
 .module-leadin .section-title .back-link a:hover span span{ text-decoration: underline !important; }
 .module-leadin h2 { font-size: $font-size_step-up-5; font-weight: 700; color: #000; }
 .module-leadin .content{ margin-bottom: 0; }
-.module-leadin .content.bottom-border{ padding-bottom: 4.666rem; border-bottom: 2px solid #000; }
+.module-leadin .content.bottom-border{ 
+	padding-bottom: 4.666rem; border-bottom: 2px solid #000; 
+}
+
+.module-leadin {
+	
+	.section-title {
+		&.hide_divider {
+			border-bottom: 0px;
+		}
+	}
+}
 
 @media (min-width: 768px) { 
     .module-leadin .section-title{ display: flex; justify-content: space-between; }

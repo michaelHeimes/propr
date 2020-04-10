@@ -1,4 +1,70 @@
 
+#top-bar-alert {
+	display: none;
+	background-color: $c-accent;
+	color: #fff;
+	font-size: rem-calc(16px);
+	padding-top: 10px;
+	padding-bottom: 12px;
+	
+	.container {
+		line-height: 1;
+		position: relative;
+		padding-left: 57px;
+		padding-right: 57px;
+
+		@media (min-width: 768px) {
+			padding-left: 30px;
+		}
+
+		@media (min-width: 992px) {
+			padding-left: 30px;
+		}
+		
+		@media (min-width: 1024px) {
+			padding-left: 40px;
+		}
+	
+		a {
+			color: #fff;
+			text-decoration: underline;
+		}
+		
+		button {
+			cursor: pointer;
+			padding: 0;
+			background: transparent;
+			border: 0;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			right: 32px;
+			top: 50%;
+			transform: translateY(-50%);
+			
+			span {
+				display: inline-block;
+				width: 20px;
+				height: 2px;
+				background: #fff;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%) rotate(45deg);
+				
+				&:last-child {
+				transform: translateY(-50%) rotate(-45deg);
+				}
+			}
+			
+		}
+	
+	}
+	
+}
+	
+
 header {
     background: #fff;
     height: 138px;
@@ -27,7 +93,7 @@ header.alternative{
 }
 .navbar-header {
 	width: 100%;
-    padding: 36px 30px 12px 30px;
+    padding: 36px 36px 12px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;

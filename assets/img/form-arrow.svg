@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#pattern);
+      }
+    </style>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 96 96">
+      <image width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAABo0lEQVR4nO3YzS4DURjG8adVasNGQtR9WLkCWxdGYqMJsRAfiS0rkbS0oguJhcuwY+Mrj0wQjFO6cM4w/f+Sd9N0pjPnmek57xEAAAAAAAAAAAAAAAAAAAAAAAAA4N+qpL5w27FOXZPUkFTNfX4t6XbQk1QqyYckrSyASFWxvWP70Z9d2Z4c9DdLL2IAWVVtr/irM9tTBBA/gLcQtm3f52K4tD1DAPEDyGrU9lrgTejYHiGANJUN9GbgTbiwPUcAaapue6vPnFAlgDRVs70eWB2d2J4lgHQhHAbehN7r8pUAEk3MG4EQjj4uUVMrohOel9RLfqff60halHSTuhPOt+3DakHSvqR66vsngHfjRfwoAbzoSlqSdPcXLiaqAifhrDFbDkzCrSIn4eQKHPxd20+BhqzOMjR+D7Bq+yE3+Ke2G/nvl14Ba//QVkS33zEE8Hs1ZrsZ2Iw7ZzMuzeCHut7WT8eWXqLB3ws8+W3b0wQQ/z+/GXjyj21PDHKO0ov85B8Etp3bgw7+UAQAAAAAAAAAAAAAAAAAAAAAAAAAAEApSHoGfhDYFHqECjEAAAAASUVORK5CYII="/>
+    </pattern>
+  </defs>
+  <rect id="arrow" class="cls-1" width="48" height="48"/>
+</svg>

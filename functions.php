@@ -14,7 +14,6 @@ function theme_setup() {
 		add_image_size( 'xxl', 2000, 9999 ); // 2000px wide unlimited height
 		add_image_size( 'xxxl', 3000, 9999 ); // 3000px wide unlimited height
 		add_image_size( 'recent_post', 640, 640 );
-
 	}
 
 	add_filter( 'image_size_names_choose', 'aw_custom_add_image_size_names' );
@@ -210,4 +209,6 @@ if( function_exists('acf_add_options_page') ) {
 add_image_size( 'recent-thumb', 9999, 9999 );
 add_image_size( 'select-work', 840, 640 );
 add_image_size( 'propr-mattr', 1440, 800 );
+add_image_size( 'two_col_16_9', 1520, 856, true );
+add_image_size( 'award', 1520, 856, true );
 
