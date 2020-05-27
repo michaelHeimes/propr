@@ -108,7 +108,15 @@ jQuery( document ).ready(function($) {
 		.addTo(controller);	
 				
 	};
+
+// 	Download Button
+	if($('a.download-link').length){
 	
+		$(document).on('click', 'a.download-link', function() {
+			$('a.download-link').addClass('clicked');
+		});
+	
+	};
 	
 // 	Select Work
 	if($('.projects-wrap').length){
@@ -120,7 +128,8 @@ jQuery( document ).ready(function($) {
 		
 		var scene = new ScrollMagic.Scene({
         triggerElement: '.projects-wrap',
-        triggerHook: "onCenter",
+        triggerHook: "onEnter",
+        offset: 200
 		})
 		.setTween(stagger_projects)
 		.addTo(controller);

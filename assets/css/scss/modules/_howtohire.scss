@@ -44,6 +44,7 @@
 		}
 		
 		.service-list-wrap {
+						
 			ul {
 				list-style: none;
 				padding-bottom: 0.5em;
@@ -83,6 +84,21 @@
 		}
 		
 		.single-service-row-wrap {
+			
+			a {
+				color: #212529;
+				
+			&:hover {
+				color: $c-accent;
+				text-decoration: none;
+				
+				h3 img {
+					transform: translateX(20px);
+				}
+				
+			}
+				
+			}
 					
 			.single-service-row {
 				padding-top: 1.25em;
@@ -101,11 +117,18 @@
 				}
 				
 				h3 {
-					
+					display: flex;
+					align-items: center;
 					font-weight: bold;
 					line-height: 1.4;
 					margin-top: 0;
 					padding-bottom: 0.3em;
+					
+					img {
+						max-width: 54px;
+						    transition: transform 0.3s ease;
+					}
+					
 				}
 				
 				p {

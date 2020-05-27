@@ -40,36 +40,37 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-	    	<?php if( get_field('enable_top_bar_alert', 'option') == 'true' ):?>
-	    	
-		    	<div id="top-bar-alert">
-			    	
-			    	<div class="container text-center">
+    		<?php if(get_field('hide_top_alert_bar') != 'true'):?>
+		    	<?php if( get_field('enable_top_bar_alert', 'option') == 'true'):?>
 		    	
-				    	<?php if($alert_message = get_field('top_bar_message', 'option')):?>
-					    	
-					    	<span><?php echo $alert_message;?></span>
-					    	
-				    	<?php endif;?>
+			    	<div id="top-bar-alert">
 				    	
-						<?php 
-						$link = get_field('top_bar_link', 'option');
-						if( $link ): 
-						    $link_url = $link['url'];
-						    $link_title = $link['title'];
-						    $link_target = $link['target'] ? $link['target'] : '_self';
-						    ?>
-						    <span><a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a></span>
-						<?php endif; ?>
-		    	
-						<button type="button"><span></span><span></span></button>
-		    	
-			    	</div>
+				    	<div class="container text-center">
 			    	
-		    	</div>
-	    	
+					    	<?php if($alert_message = get_field('top_bar_message', 'option')):?>
+						    	
+						    	<span><?php echo $alert_message;?></span>
+						    	
+					    	<?php endif;?>
+					    	
+							<?php 
+							$link = get_field('top_bar_link', 'option');
+							if( $link ): 
+							    $link_url = $link['url'];
+							    $link_title = $link['title'];
+							    $link_target = $link['target'] ? $link['target'] : '_self';
+							    ?>
+							    <span><a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a></span>
+							<?php endif; ?>
+			    	
+							<button type="button"><span></span><span></span></button>
+			    	
+				    	</div>
+				    	
+			    	</div>
+		    	
+				<?php endif;?>
 			<?php endif;?>
-
 
     <header class="<?php if( get_field('invert_navigation_colors') ){ echo 'inverse'; } ?><?php if( get_field('pink_navigation') ){ echo 'alternative'; } ?> site-header">
 	    	

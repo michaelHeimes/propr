@@ -11,6 +11,7 @@
 }
 
 .brand-audit-button a {
+	position: relative;
 	display: inline-block;
 	font-size: rem-calc(30px);
     line-height: 1;
@@ -28,9 +29,30 @@
 		font-size: rem-calc(50px);
     }
     
+    &:before {
+	    content: 'Thank You!';
+	    position: absolute;
+	    bottom: -70px;
+	    left: 0;
+	    right: 0;
+	    width: 100%;
+	    text-align: center;
+	    color: #292929;
+	    opacity: 0;
+	    transform: translateY(20px);
+	    transition: all 0.3s ease;
+    }
+    
     &:hover {
 	    color: #C31A8F;
 	    background-color: #fff;
+    }
+    
+    &.clicked {
+	    &:before {
+		    opacity: 1;
+		    transform: translateY(0px);
+	    }
     }
     
 }

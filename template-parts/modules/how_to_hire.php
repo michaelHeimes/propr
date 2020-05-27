@@ -48,6 +48,12 @@
 		        		
 		        		<div class="single-service-row-wrap">
 			        		
+			        		<?php if( $page_link = get_sub_field('page_link')):?>
+			        		
+			        		<a href="<?php echo $page_link;?>">
+				        		
+				        	<?php endif;?>
+			        		
 			        		<div class="single-service-row">
 	        		
 				        		<div class="icon-wrap">
@@ -63,7 +69,7 @@
 				        		<div class="text-wrap">
 									
 									<?php if( $heading = get_sub_field('heading') ): ?>
-					                    <h3><?php echo $heading ?></h3>
+					                    <h3><?php echo $heading ?><?php if( $page_link = get_sub_field('page_link')):?><img src="/wp-content/themes/propr/assets/img/Arrow-Pink.svg"><?php endif;?></h3>
 					                <?php endif; ?>
 				
 									<?php if( $copy = get_sub_field('copy') ): ?>
@@ -74,6 +80,11 @@
 				        		
 			        		</div>
 			        		
+			        		<?php if( $page_link = get_sub_field('page_link')):?>
+			        		
+			        		</a>
+				        		
+				        	<?php endif;?>			        		
 		        		</div>
 		        		
 	        	

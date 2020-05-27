@@ -1,4 +1,10 @@
-<div class="module-section-form-w-cta" style="background-color: <?php the_sub_field('background_color');?>">
+<div class="module-section-form-w-cta mode-<?php the_sub_field('mode'); ?>" style="background-color: <?php the_sub_field('background_color');?>">
+	<style>
+		.module-section-form-w-cta .gform_button.button {
+			background-color: <?php the_sub_field('button_background_color');?>;
+			color: <?php the_sub_field('button_text_color');?>;
+		}
+	</style>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">
