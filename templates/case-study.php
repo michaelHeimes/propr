@@ -8,7 +8,7 @@ get_header();?>
 <div id="main-content">
 	
 	<div class="module-hero">
-	    <div class="container">
+	    <div class="container content">
 	        <div class="row">
 	            <div class="col-md-12">
 	                <h2><?php the_field('small_heading');?></h2>
@@ -140,7 +140,7 @@ get_header();?>
 			
 		</div>
 
-
+		<?php if(get_field('tcg_hide_this_element') != 'true'):?>
 		<div class="three-col-graphic">
 			<div class="container">
 			    <div class="row">
@@ -195,6 +195,7 @@ get_header();?>
 			    </div>
 			</div>
 		</div>	
+		<?php endif;?>
 		
 		
 		<div class="two-img-set">
@@ -257,27 +258,26 @@ get_header();?>
 		    </div>
 		</div>
 		
-		
-		<div class="post-inline-cta">
-			<div class="container">
-			    <div class="row">
-			        <div class="col-md-12">
-		                <?php if($title = get_field('cta_heading')): ?>
-		                    <h4><?php echo $title; ?></h4>
-		                <?php endif; ?>
-			        </div>
-			        
-			        <div class="col-md-12">
-		                <a href="<?php the_field('cta_button_link'); ?>" class="btn"><?php the_field('cta_button_label'); ?></a>
-			        </div>
-			        
-			    </div>
-			</div>
-		</div>
-		
-	
 	</div>
-	
+		
+	<div class="post-inline-cta">
+		<div class="container content">
+		    <div class="row">
+		        <div class="col-md-12">
+	                <?php if($title = get_field('cta_heading')): ?>
+	                    <h4><?php echo $title; ?></h4>
+	                <?php endif; ?>
+		        </div>
+		        
+		        <div class="col-md-12">
+	                <a href="<?php the_field('cta_button_link'); ?>" class="btn"><?php the_field('cta_button_label'); ?></a>
+		        </div>
+		        
+		    </div>
+		</div>
+	</div>
+		
+		
 </div> <!-- #main-content -->
 
 <?php get_footer();?>
