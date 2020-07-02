@@ -1,5 +1,5 @@
 <section class="section-leadership">
-    <div class="leadership-image slanted-img-reverse">
+    <div class="leadership-image">
         <?php $image = get_sub_field('image'); ?>
         <img src="<?php echo $image['url']; ?>" alt="">
     </div>

@@ -1,28 +1,31 @@
-.subfooter {
-    background: #000;
-    color: #fff;
-    margin-top: 0;
-}
-
 .home,
 .blog {
-	.subfooter {
+	.footer-nav-wrap {
 		margin-top: 100px;
 	}
 }
 
-.subfooter .row {
-    padding: 30px 0 40px;
-}
 .subfooter-wrapper{
     margin-top: 1.75em;
 }
 .subfooter .btn {  margin: 10px 0; }
-.subfooter h3 {
+
+.subfooter h3.heading {
     font-weight: 300;
     padding-bottom: 18px;
-    border-bottom: 1px solid #fff;
     font-size: 1.6667em;
+    flex: 1;
+    position: relative;
+    
+    &:after {
+	    content: '';
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    border-bottom: 1px solid #fff;
+	    width: 90%;
+    }
+    
 }
 
 footer {
@@ -30,6 +33,11 @@ footer {
     height: 81px;
     color: #fff;
     font-size: 12px;
+    
+    .col {
+	    padding-left: 0;
+    }
+    
 }
 .footer-copyright {
     line-height: 64px;
@@ -39,42 +47,7 @@ footer {
     text-align: center;
     padding: 0;
 }
-.footer-nav {
-    float: left;
-    display: block;
-    text-align: left;
-}
-.footer-nav li {
-    display: inline-block;
-}
-.footer-nav li a {
-    color: #fff;
-    line-height: 64px;
-    padding: 0 0 0 35px;
-}
-.footer-nav li a:hover {
-    color: #ddd;
-}
-.footer-nav li li {
-    display: none;
-}
-.footer-cta .btn {
-    float: right;
-    color: #fff;
-    background-color: $c-green;
-    height: 81px;
-    border-radius: 0;
-    line-height: 64px;
-    padding: 8px 77px;
-    font-size: 22px;
-    text-transform: uppercase;
-    font-weight: 700;
-    width: 100%;
-}
-.footer-cta .btn:hover {
-    background-color: $c-primary;
-}
-
+								
 
 @media (min-width: 768px) {
     .footer-cta .btn{
@@ -86,6 +59,181 @@ footer {
     .footer-copyright{
         width: auto;
         text-align: left;
-        padding: .5em 0 0 2em;
+        padding: .5em 0 0;
     }
  }
+ 
+ 
+.subfooter {
+    background: #000;
+    color: #fff;
+    margin-top: 0;
+    padding-bottom: 5.5em;
+    
+    .heading-wrap {
+    	padding-top: 2.85em;
+    }
+    
+    .form-address-wrap {
+	    padding-top: 1em;
+    }
+    
+} 
+ 
+ 
+ 
+.footer-nav-wrap {
+	position: relative;
+	min-height: 127px;
+	background: #1F1F1F;
+	display: flex;
+    align-items: center;
+    
+    .inner {
+	    margin-top: 0;
+	    padding-left: 0;
+	    
+	    >.col {
+		    padding-left: 0;
+	    }
+	
+		.footer-nav {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			padding-right: 400px;
+			
+			li {
+			    display: inline-block;
+				
+				a {
+					font-size: 20px;
+					font-weight: 900;
+					text-transform: uppercase;
+				    color: #fff;
+				    line-height: 2.2;
+				    padding: 4px;
+				    margin-right: 35px;
+					
+					&:hover {
+					    color: #ddd;
+					}
+					
+					li {
+					    display: none;
+					}
+					
+				}
+				
+			&.secondary {
+				a {
+					font-weight: 600;
+					color: $c-accent;
+					text-transform: lowercase;
+				}
+			}
+				
+			}
+			
+		}
+		
+		.footer-cta {
+			position: absolute;
+		    right: 0;
+		    top: 0;
+		    bottom: 0;
+		
+			.btn {
+			    color: #fff;
+			    background-color: $c-green;
+			    height: 100%;
+			    border-radius: 0;
+			    font-size: 33px;
+			    text-transform: uppercase;
+			    font-weight: 700;
+			    width: 100%;
+			    width: 382px;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+				
+				&:hover {
+				    background-color: $c-primary;
+				}
+				
+			}
+			
+		}
+		
+	}
+		 
+}
+
+.form-address-wrap {
+	padding-right: 30px;
+	justify-content: space-between;
+	
+	h4 {
+		font-size: 20px;
+		font-weight: 900;
+		text-transform: uppercase;
+	    color: #fff;
+	    line-height: 2.2;
+	    padding: 4px 0 0;
+	    margin-right: 35px;
+	}
+
+	.form-wrap {
+		padding-right: 30px;
+		padding-bottom: 2em;
+		
+		h4 {
+/*
+			font-size: 20px;
+			font-weight: 900;
+			text-transform: uppercase;
+		    color: #fff;
+		    line-height: 2.2;
+		    padding: 4px 0 0;
+		    margin-right: 35px;
+*/
+		}
+		
+		#mc_embed_signup {
+			
+			form {
+				
+				.input-wrap {
+					display: flex;
+			
+					label {
+					    margin-bottom: 0;
+					    padding-bottom: 3.75em;
+					}
+				
+					input#mce-EMAIL {
+						background-color: #fff;
+						float: none;
+						
+						@media (min-width: 1237px) {
+							flex: 1;
+						}
+					}
+				
+				}
+				
+			}
+							
+		}
+		
+		.location-wrap {
+			padding-right: 40px;
+			
+			.address-wrap {
+				padding-right: 20px;	
+			}
+			
+		}
+		
+	}
+}
