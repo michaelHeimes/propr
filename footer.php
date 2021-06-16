@@ -2,7 +2,7 @@
         
             <div class="footer-nav-wrap">
 	            <div class="container">
-			       	<div class="inner row flex-nowrap">
+			       	<div class="inner row">
 			            <div class="col">
 				            <?php
 				                /* Main Menu */
@@ -67,16 +67,14 @@
                                 </div>
                                 
 		                         <div class="location-wrap">
-			                    
-				                    <h4>Locate Us</h4>
-				                    
+			                    				                    
 				                    <div class="address-wrap">
 					                    <?php the_field('address', 'option');?>
 				                    </div>
 				                    
 				                    <div class="directions-link-wrap">
 					                    
-										<a class="btn" href="<?php the_field('address');?>" target="_blank">Get Directions</a>
+										<a class="btn" href="<?php the_field('address_map_link', 'option');?>" target="_blank">Get Directions</a>
 					                    
 				                    </div>
 			                    

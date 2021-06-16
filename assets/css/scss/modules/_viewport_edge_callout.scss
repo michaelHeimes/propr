@@ -1,0 +1,42 @@
+.viewport_edge_callout {
+	margin-bottom: 3.34em;
+	
+	.inner {
+		position: relative;
+		padding: 4.1667em 4.1667em 4.1667em 0;
+		
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: -100vw;
+			width: 100vw;
+		}
+		    
+		p {
+			font-size: rem-calc(69px);
+			line-height: 1.24;
+			font-weight: bold;
+			margin-bottom: 0;
+		}
+	}
+	
+&.bg-colorpink {
+	
+	.inner {
+		background-color: $c-accent;
+		
+		&:before {
+			background-color: $c-accent;
+		}
+		
+		p {
+			color: #fff;
+		}
+		
+	}
+	
+}
+	
+}

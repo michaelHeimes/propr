@@ -10,6 +10,17 @@
     padding: 224px 0 259px;
 }
 
+.container.no-left-offset {
+	padding-left: 40px;
+	padding-right: 20px;
+	
+	@media (min-width: 768px) {
+		padding-left: 60px;
+		padding-right: 30px;
+	}
+	
+}
+
  h2 { 
 	font-size: 2.75em;
 	line-height: 1.4em;

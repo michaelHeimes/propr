@@ -8,7 +8,7 @@ get_header();?>
 <div id="main-content">
 	
 	<div class="module-hero">
-	    <div class="container content">
+	    <div class="container no-left-offset content">
 	        <div class="row">
 	            <div class="col-md-12">
 	                <h2><?php the_field('small_heading');?></h2>
@@ -20,8 +20,8 @@ get_header();?>
 	
 	<div class="content">
 
-		<div class="quote">
-		    <div class="container">
+		<div class="cs-quote">
+		    <div class="container no-left-offset">
 		        <div class="row">
 		            <div class="col-md-12">
 			            
@@ -38,7 +38,7 @@ get_header();?>
 		</div>
 		
 		<div class="offset-caption">
-		    <div class="container">
+		    <div class="container no-left-offset">
 		        <div class="row">
 			        
 			        <div class="img-wrap col-12 col-lg-8">
@@ -58,7 +58,7 @@ get_header();?>
 		</div>
 
 		<div class="qas">
-		    <div class="container">
+		    <div class="container no-left-offset">
 		        <div class="row">	
 			        		
 					<div class="col-12 col-md-10 offset-md-2">
@@ -90,7 +90,7 @@ get_header();?>
 		</div>
 		
 		<div class="four-col-stats">
-		    <div class="container">
+		    <div class="container no-left-offset">
 		        <div class="row">
 			        
 			        <h2 class="col col-12 text-center"><?php the_field('impact_heading');?></h2>
@@ -125,7 +125,7 @@ get_header();?>
 		</div>
 		
 		<div class="large-img">
-			<div class="container">
+			<div class="container no-left-offset">
 			    <div class="row">
 				    <div class="col col-12">
 						<?php 
@@ -142,7 +142,7 @@ get_header();?>
 
 		<?php if(get_field('tcg_hide_this_element') != 'true'):?>
 		<div class="three-col-graphic">
-			<div class="container">
+			<div class="container no-left-offset">
 			    <div class="row">
 				    
 				    <div class="left col col-12 col-md-4">
@@ -199,7 +199,7 @@ get_header();?>
 		
 		
 		<div class="two-img-set">
-			<div class="container">
+			<div class="container no-left-offset">
 			    <div class="row">
 				    <?php 
 					$image = get_field('left_image');
@@ -223,7 +223,7 @@ get_header();?>
 		
 		
 		<div class="qas qas-2">
-		    <div class="container">
+		    <div class="container no-left-offset">
 		        <div class="row">	
 			        		
 			        <div class="col col-12">

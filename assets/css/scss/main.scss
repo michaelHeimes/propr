@@ -31,9 +31,23 @@
 @import "modules/two_col_imgs_16_9";
 @import "modules/fullwidthimage";
 @import "modules/texteditor";
-@import "modules/_formwithcta";
+@import "modules/formwithcta";
+@import "modules/viewport_edge_callout";
+@import "modules/quote";
 @import "blog/list";
 @import "blog/post";
+
+
+.container.no-left-offset {
+	padding-left: 20px;
+	padding-right: 20px;
+	
+	@media (min-width: 768px) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	
+}
 
 .img-fluid{
     width: 100%;

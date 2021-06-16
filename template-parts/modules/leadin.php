@@ -2,7 +2,7 @@
     $right = get_sub_field('content_right');
     $left = get_sub_field('content_left'); 
 ?>
-<div class="module-leadin <?php if( $need_top_padding = get_sub_field('need_top_padding') ):?>needs-top-padding<?php endif; ?>" <?php if( $color = get_sub_field('background_color') ): ?>style="background-color:<?php echo $color; ?>"<?php endif; ?>>
+<div class="module-leadin <?php if( $custom_class = get_sub_field('custom_class') ): echo $custom_class; endif;?> <?php if( get_sub_field('left_offset') == 'true' ):?>offset <?php endif;?> <?php if( $need_top_padding = get_sub_field('need_top_padding') ):?>needs-top-padding<?php endif; ?>" <?php if( $color = get_sub_field('background_color') ): ?>style="background-color:<?php echo $color; ?>"<?php endif; ?>>
     <div class="container">
 	    
 	    <?php if($title = get_sub_field('title')):?>                            

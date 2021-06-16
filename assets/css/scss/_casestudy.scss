@@ -1,16 +1,5 @@
 .page-template-case-study {
-	
-	.container {
-		padding-left: 20px;
-		padding-right: 20px;
-		
-		@media (min-width: 768px) {
-			padding-left: 30px;
-			padding-right: 30px;
-		}
-		
-	}
-		
+			
 	header.site-header {
 		position: absolute;
 		width: 100%;
@@ -118,7 +107,7 @@
 			}
 		}
 	
-		.quote {
+		.cs-quote {
 			color: $c-primary;
 			padding-top: 6.7em;
 			padding-bottom: 3.55em;

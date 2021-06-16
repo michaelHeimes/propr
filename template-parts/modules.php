@@ -126,6 +126,14 @@ $module_id = uniqid();
 
             get_template_part( 'template-parts/modules/four-column' );
 
+        elseif( get_row_layout() == 'viewport_edge_callout'):
+
+            get_template_part( 'template-parts/modules/viewport_edge_callout' );
+
+        elseif( get_row_layout() == 'quote'):
+
+            get_template_part( 'template-parts/modules/quote' );
+
         endif; 
 
 ?>

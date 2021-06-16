@@ -5,6 +5,47 @@
 	&.needs-top-padding {
 		padding-top: 3.34em;
 	}
+
+&.offset {
+	.col-xl-10 {
+		@media (min-width: 1024px) { 
+			margin-left: 16.666667%;
+		}
+	}
+	
+	h3 {
+		line-height: 1.35;
+		margin-bottom: 0;
+	    padding-bottom: 1.58em;
+		    
+		@media (min-width: 1024px) {
+			font-size: rem-calc(37px);
+		}
+	}
+
+	p {
+		@media (min-width: 1024px) {
+			font-size: rem-calc(30px);
+		}
+	}
+	
+}
+	
+&.manifesto-bold-headings {
+	h3 {
+	    font-weight: 900;
+	    font-size: rem-calc(99px);
+	    line-height: 1.4;
+	    text-transform: uppercase;		
+	}
+	
+	h4 {
+		font-size: rem-calc(69px);
+		line-height: 1.24;
+		color: $c-accent;
+	}
+	
+}
 	
 }
 
